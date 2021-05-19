@@ -36,6 +36,9 @@ SECRET_KEY = 'django-insecure-)x2x34qwodmwf5h3yo+#li_%d#-3mj+p!y%rb23g!50_$1irg9
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
+SECRET_KEY = 'drdjbq$loegxcmffqozlhwm65=sd-$i*z5vo^b#ayn=&%9_hge'
+=======
 SECRET_KEY = '==vv3lqx-4#1ip#397xe%=t&6ck=brkjckcszc&c$-q&6v9%#n'
 >>>>>>> 510c6698a7363255e069857aaad21b8d12919ba7
 
