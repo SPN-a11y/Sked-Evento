@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" >All Resgistered Students List</a>
+</nav>
+
+
+
+{% for register in registers %} 
+    <p>{{register.username}}</p>
+    <p>{{register.registeredevents}}</p>
+    <a href="/deleteevents/{{register.id}}/" class="btn btn-danger">delete</a>
+{% endfor %} 
+{% endblock %} 

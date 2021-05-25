@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<h1 style="text-align:center">My Events</h1>
+{% for event in events %}
+<div style="margin: 40px" class="alert alert-warning" role="alert">
+    <p>{{event.username}}</p>
+    <p>{{event.registeredevents}}</p>
+</div>
+{% endfor %}
+{% endblock %} 

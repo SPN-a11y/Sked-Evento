@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">User Login</a>
+</nav>
+
+<div class="container-fluid" style="position: relative;height: 900px;background-size: cover;
+background-image: url({%static "img/clg.jpg" %});">
+<div class="container" style="position:absolute;top: 50px;right: 20px;width: 300px;height: 250px;background-color:
+    #CD5C5C;padding: 40px">
+    <h1 style="color: white;text-align:center;">Login</h1>
+    <form method="post" action="/customer/authenticate/">
+        {% csrf_token %} 
+        <input type="text" name="username" placeholder="username" style="margin-bottom:10px">
+        <input type="password" name="password" placeholder="password" style="margin-bottom:10px">
+        <input type="submit" class="btn btn-success" style="display: block;margin:
+        auto"name="" style="margin-bottom:10px">
+    </form>
+
+{% for message in messages %} 
+    <p style="text-align: center">{{message}}</p>
+{% endfor %} 
+</div>
+</div>
+{% endblock %}

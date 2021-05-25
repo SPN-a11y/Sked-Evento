@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %} 
+<nav class="navbar navbar-light bg-light">
+<a class='navbar-brand'>Welcome {{username}}</a>
+<a href="/userlogout/" class="btn btn-danger">logout</a>
+</nav>
+<div class="container-fluid" style="position: relative;height: 900px;background-size: cover;
+background-image: url({%static "img/clg4.jpg" %});">
+{% for message in messages %} 
+<h4><p style="color: rgb(250, 6, 6);text-align:center">{{message}}</p></h4>
+{% endfor %} 
+<form method="post" action="/reg/">
+    {% csrf_token %} 
+<div class="container" style="position:absolute;top: 50px;right: 20px;width: 1000px;height: 230px;background-color:
+rgb(247, 247, 247)">
+    <table style="width: 1000px">
+        <tr>
+            <th>Event Name</th>
+            <th>Event Date</th>
+            <th>Event Time</th>
+            <th>Event Location</th>
+            <th>Max Num.of Stud</th>
+            <th>About Event</th>
+        </tr>
+        {% for event in events %} 
+        <tr>
+            <td>{{event.ename}}</td>
+            <td>{{event.edate}}</td>
+            <td>{{event.etime}}</td>
+            <td>{{event.eloc}}</td>
+            <td>{{event.enum}}</td>
+            <td>{{event.edisc}}</td>
+            <td><input type="submit" class="btn btn btn-outline-success" value="Register" name=""></td>
+        </tr>
+        {% endfor %} 
+    </table>
+</div>
+</form>
+</div>
+{% endblock %} 
