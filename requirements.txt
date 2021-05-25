@@ -1,3 +1,4 @@
 Django==3.2.3
 python==3.9.5
 SQLlite==3.36.0
+whitenoise==5.2.0
