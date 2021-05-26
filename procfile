@@ -1,0 +1,1 @@
+web: gunicorn Sked-Evento.wsgin--log-file -
