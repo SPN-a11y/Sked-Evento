@@ -1,0 +1,1 @@
+web: gunicorn sked-evento.wsgi --log-file -
