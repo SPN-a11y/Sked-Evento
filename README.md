@@ -27,8 +27,7 @@ BFH/rec6UmPeWEqgdV8mX/2021
 
 ## Link to product walkthrough
 
-[link to video]
-
+https://www.loom.com/share/15b6c2219ec9479180d9d5a0ab64f65c
 
 ## How it Works ?
 
