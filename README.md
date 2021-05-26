@@ -42,7 +42,11 @@ https://www.loom.com/share/15b6c2219ec9479180d9d5a0ab64f65c
 
 ## Libraries used
 
-Library Name - Version
+Django - 3.1.11
+python-decouple - 3.4
+dj-database-url - 0.5.0
+whitenoise - 5.2.0
+gunicorn - 20.1.0
 
 
 ## How to configure
