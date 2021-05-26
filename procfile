@@ -1,2 +1,2 @@
-web: gunicorn sked-evento.wsgi --log-file -
-web: python run.py
+web: gunicorn sked-evento.wsgi
+web: python manage.py runserver
