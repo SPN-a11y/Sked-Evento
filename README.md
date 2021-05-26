@@ -37,7 +37,7 @@ https://www.loom.com/share/15b6c2219ec9479180d9d5a0ab64f65c
     -> All this data is logged in the database and the user is given a conformation message on the screen.
     -> This data is then sent to the administrator (website owner) and they may interact with the client as per his requirements and his contact data stored in the database.
 
-2. Embed video of project demo
+2. https://www.loom.com/share/af334a6d16b14451a601d02196225544
 
 
 ## Libraries used
