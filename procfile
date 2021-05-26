@@ -1,1 +1,2 @@
 web: gunicorn sked-evento.wsgi --log-file -
+gunicorn -b :5000 --access-logfile - --error-logfile - procfile:ske-evento
